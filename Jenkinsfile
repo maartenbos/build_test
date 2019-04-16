@@ -4,7 +4,7 @@ pipeline {
     stage('testing') {
       steps {
         echo 'Start Testing'
-        sh 'ls -ltr'
+        sh 'bundle exec rspec'
       }
     }
   }
